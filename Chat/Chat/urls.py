@@ -15,9 +15,10 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
-from appChat.views import ChatHome, ChatLogin
+from appChat.views import ChatHome, ChatLogin, ChatGlobal
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^home/$', ChatHome, name='home'),
     url(r'^login/$', ChatLogin, name='login'),
+    url(r'^chat/$', ChatGlobal, name='chat'),
 ]

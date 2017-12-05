@@ -12,6 +12,9 @@ def ChatHome(request):
     return render(request, 'home.html', {})
 def ChatLogin(request):
     return render(request, 'login.html',{})
+def ChatGlobal(request):
+    return render(request, 'chat.html',{})
+
 """class TweetCreateView(LoginRequiredMixin,FormUserNeededMixin, CreateView):
     form_class = TweetModelForm
     template_name = "tweets/create_view.html"
